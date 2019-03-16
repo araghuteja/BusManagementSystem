@@ -1,5 +1,8 @@
 package com.raghu.web.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +25,13 @@ public class MainController {
 		return "index";
 
 	}
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	  public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
+	    ModelAndView mav = new ModelAndView("login");
+	    mav.addObject("login", new Login());
+	    return mav;
+	  }
 
 	@RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
 	public ModelAndView hello(@PathVariable("name") String name) {

@@ -61,7 +61,7 @@
 		<a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-user large"></span><h2> Sign Up</h2></a>
 	</div>
 	<div class="col-md-3 col-md-offset-2">
-		<a class="btn btn-default" href="#" role="button"><span class="glyphicon glyphicon-log-in large"></span><h2> Login</h2></a>
+		<a class="btn btn-default" href="login" role="button"><span class="glyphicon glyphicon-log-in large"></span><h2> Login</h2></a>
 	</div>
   </div>
  
